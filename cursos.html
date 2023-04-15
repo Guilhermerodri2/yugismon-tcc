@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Cursos</title>
+    <link href="css/style.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<script>
+		function mostrarDetalhes(curso) {
+			let detalhes = document.getElementById(curso);
+			if (detalhes.style.display === "none") {
+				detalhes.style.display = "block";
+			} else {
+				detalhes.style.display = "none";
+			}
+		}
+	</script>
+	<style>
+		.curso {
+			cursor: pointer;
+			color: blue;
+			text-decoration: underline;
+		}
+		.detalhes {
+			display: none;
+			margin-left: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Conheça nossos cursos</h1>
+
+	<h2>Cursos Técnicos Integrados ao Ensino Médio</h2>
+	<ul>
+		<li class="curso" onclick="mostrarDetalhes('informatica')">Técnico em Informática - período integral</li>
+		<li class="curso" onclick="mostrarDetalhes('mecanica')">Técnico em Mecânica - período integral</li>
+		<li class="curso" onclick="mostrarDetalhes('administracao')">Técnico em Administração - período integral</li>
+        <li class="curso" onclick="mostrarDetalhes('eletronica')">Técnico em Eletronica - período integral</li>
+        <li class="curso" onclick="mostrarDetalhes('automacao')">Técnico em Automação Industrial - período integral</li>
+        <li class="curso" onclick="mostrarDetalhes('biotecnologia')">Técnico em Biotecnologia - período integral</li>
+	</ul>
+	<div id="informatica" class="detalhes">
+		<p>O curso técnico em Informática é destinado a alunos que desejam cursar o ensino médio e ter uma formação técnica na área de Tecnologia da Informação. As aulas são ministradas em período integral, com carga horária total de 1200 horas. O curso possui estágio obrigatório.</p>
+	</div>
+	<div id="mecanica" class="detalhes">
+		<p>O curso técnico em Mecânica é destinado a alunos que desejam cursar o ensino médio e ter uma formação técnica na área de Mecânica Industrial. As aulas são ministradas em período integral, com carga horária total de 1300 horas. O curso possui estágio obrigatório.</p>
+	</div>
+	<div id="administracao" class="detalhes">
+		<p>O curso técnico em Administração é destinado a alunos que desejam cursar o ensino médio e ter uma formação técnica na área de Gestão Empresarial. As aulas são ministradas em período integral, com carga horária total de 1000 horas. O curso não possui estágio obrigatório.</p>
+	</div>
+    <div id="automacao" class="detalhes">
+		<p>O curso Técnico em Automação Industrial Integrado ao Ensino Médio tem o objetivo de preparar profissionais técnicos para a área de automação industrial, com qualificada base prática e teórica, compreendendo tecnologias associadas aos processos eletroeletrônicos, mecânicos e físico-químicos. O campo de atuação para estes profissionais compreende diversos segmentos de mercado, tais como: gestão, projetos, programação, instalação, montagem, manutenção, controle, testes e otimização de sistemas automatizados em ambientes predominantemente industriais. A organização do curso está estruturada através de uma matriz curricular que contém um núcleo básico comum, um núcleo tecnológico e um núcleo politécnico, que faz a intersecção entre os outros dois núcleos, proporcionando práticas integradoras. Organiza-se, portanto, o curso com uma sólida base científica-tecnológica e humanística, possuindo uma carga horária total de 3.313 horas dividida em 3 anos.</p>
+	</div>
+
+    <div id="biotecnologia" class="detalhes">
+		<p>Formar Técnicos em Biotecnologia que compreendam os fundamentos científicos e tecnológicos aplicados nos processos de trabalho em biotecnologia, mas que tenham uma visão crítica e abrangente da Saúde Pública, das relações sociais do trabalho e da Ciência, Tecnologia e Inovação em Saúde. 
+            A habilitação se desenvolve por meio de aulas teóricas e práticas, e conta com a participação de profissionais especializados da EPSJV e de outras unidades da Fiocruz, como o Instituto de Tecnologia em Imunobiológicos (Bio-Manguinhos), e o Centro de Desenvolvimento Tecnológico em Saúde (CDTS). e tem a quantidade de Carga Horária maxima de:2048 horas</p>
+	</div>
+
+	<h3>Cursos Técnicos Concomitantes</h2>
+	<ul>
+		<li class="curso" onclick="mostrarDetalhes('enfermagem')">Técnico em Enfermagem - período noturno</li>
+		<li class="curso" onclick="mostrarDetalhes('edificacoes')">Técnico em Edificações - período noturno</li>
+		<li class="curso" onclick="mostrarDetalhes('design')">Técnico em Design Gráfico - período noturno</li>
+	</ul>
+	<div id="design" class="detalhes">
+		<p>Aprenda como produzir e utilizar materiais focados em comunicação visual. Conheça métodos, técnicas e ferramentas utilizadas no dia a dia de profissionais especialistas em Design Gráfico. Saiba como começar com Design Gráfico. Conheça mais da Escola de UX & Design ou navegue nessa página para ver todos nossos cursos e formações.</p>
+        </div>
+
+        <div id="edificacoes" class="detalhes">
+            <p>Desenvolve e executa projetos de edificações conforme normas técnicas de segurança e de acordo com legislação específica. Planeja a execução e elabora orçamento de obras. Presta assistência técnica no estudo e desenvolvimento de projetos e pesquisas tecnológicas na área de edificações. Orienta e coordena a execução de serviços de manutenção de equipamentos e de instalações em edificações. Orienta na assistência técnica para compra, venda e utilização de produtos e equipamentos especializados.</p>
+            </div>
+
+            <div id="enfermagem" class="detalhes">
+                <p>Atua na promoção, prevenção, recuperação e reabilitação dos processos saúde–doença. Colabora com o atendimento das necessidades de saúde dos pacientes e comunidade, em todas as faixas etárias. Promove ações de orientação e preparo do paciente para exames. Realiza cuidados de enfermagem, tais como: curativos, administração de medicamentos e vacinas, nebulizações, banho de leito, mensuração antropométrica e verificação de sinais vitais, dentre outros. Presta assistência de enfermagem a pacientes clínicos e cirúrgicos.</p>
+                </div>
+
+                <h4>Graduação</h4>
+
+	<h5>Bacharelados</h5>
+	<ul>
+		<li class="curso" onclick="mostrarDetalhes('administracaob')">Bacharelado em Administração - período integral ou noturno</li>
+		<li class="curso" onclick="mostrarDetalhes('jornalismo')">Bacharel  em Jornalismo - Noturno</li>
+		<li class="curso" onclick="mostrarDetalhes('direito')">Bacharel em Direito - período integral</li>
+        <li class="curso" onclick="mostrarDetalhes('engenhariap')">Bacharelado em Engenharia de Produção- período integral</li>
+        <li class="curso" onclick="mostrarDetalhes('engenhariae')">Bacharelado em Engenharia Eletrica - período integral</li>
+        <li class="curso" onclick="mostrarDetalhes('engenhariac')">Bacharelado em Engenharia da Computação - período integral</li>
+        <li class="curso" onclick="mostrarDetalhes('engenhariam')">Bacharelado em Engenharia em Engeharia Mecanica - período integral</li>
+	</ul>
+
+    <div id="administracaob" class="detalhes">
+		<p>Objetivos do Curso: 
+            Formar profissionais capazes de atender às demandas do mercado de trabalho e da comunidade em geral, voltados para o conhecimento e a aplicação das tecnologias de administração das organizações, que conheçam e saibam aplicar, de forma coerente, modelos conceituais referentes às organizações e processos administrativos e reúnam condições não só para analisar e avaliar a realidade regional, mas também para propor as modificações que se fizerem necessárias.Duração do curso: 
+    Mínima de 8 e máxima de 12 semestres
+            
+            Mercado de Trabalho: 
+            Órgãos de planejamento, bancos, indústrias, hospitais; instituições científicas e de pesquisa, de assistência social e de ensino; empresas agrícolas, de comunicação e transportes, de exploração natural de seguros, de contabilidade e de serviços em geral; serviços públicos federal, estadual e municipal, autarquias, sociedades de economia mista, empresas estatais e privadas, assessoria e consultoria.
+            
+            Coordenação: 
+            Coordenação do Curso de Graduação em Administração
+            Turno: 
+            Integral e Noturno</p>
+	</div>
+	<div id="jornalismo" class="detalhes">
+		<p>Mercado de Trabalho: 
+            Empresas jornalísticas tradicionais - jornal e revista impressos, rádio e televisão, assessorias de imprensa de empresas, sindicatos, partidos políticos, governos e organizações não governamentais, pequenas empresas organizadas pelo próprio profissional e no chamado mercado alternativo, em particular o das rádios ou TV comunitárias.Duração do curso: 
+            Oito (8) semestres.</p>
+	</div>
+	<div id="direito" class="detalhes">
+		<p>Objetivos do Curso: 
+            Formar bacharéis em Direito capazes de saberem utilizar os conhecimentos do universo do Direito, da legislação e das normas afins, relacionando-os e aplicando-os à realidade; de avaliarem, adequadamente, as situações provenientes da multiplicidade dos conflitos entre o fato e a norma, através da vivência do fenômeno jurídico, por meio da simulação e de casos concretos; de demonstrarem senso crítico e habilidade intelectual, como resultado da seqüência, continuidade e regularidade no processo de aprendizagem e da integração das experiências oferecidas pelo Curso.
+            
+            O curso não forma especialistas; ao contrário, possibilita um conhecimento necessário e essencial a todo o campo do Direito. As especializações - e a variedade no campo do Direito é muito ampla - só se verificam depois do bacharelado, com os cursos de especialização e extensão.
+            
+            O acadêmico de Direito poderá valorizar seu Curso, participando de atividades de pesquisa e extensão que variam de duração. É importante que o estudante, desde cedo, inicie um relacionamento com escritórios e freqüente o Fórum para conhecer as exterioridades da profissão e os mecanismos utilizados na luta pela justiça. Para a formação do Bacharel em Direito é necessário muito estudo, dedicação, talento e sensibilidade; o estudo deve ser orientado, metódico e permanente; boa expressão, tanto oral como escrita, é fundamental. A Faculdade conta com um órgão muito importante para o aprendizado prático: o CAJUFF, Centro de Assistência Jurídica da Universidade Federal Fluminense, que presta assistência à comunidade com supervisão de advogados profissionais.Duração do curso: 
+            Mínima de 10 e máxima de 15 semestres
+            
+            Mercado de Trabalho: 
+            Ministério Público; magistratura; polícia; empresas privadas em geral; indústrias em geral; órgãos públicos, ligados ou não ao Poder Judiciário; penitenciárias; escritórios particulares; instituições de ensino e assessorias em associações populares.</p>
+	</div>
+    <div id="engenhariap" class="detalhes">
+		<p>Objetivos do Curso: 
+            Formar engenheiros com sólida base científica e profissional geral capacitados a identificar, formular e solucionar problemas ligados às atividades de projeto, operação e gerenciamento do trabalho e de sistemas de produção de bens e/ou serviços, considerando seus aspectos humanos, econômicos, sociais e ambientais, com visão ética e humanista, em atendimento às demandas da sociedade.Mercado de Trabalho: 
+            O profissional de Engenharia de Produção está habilitado a atuar em empresas do setor secundário, metalúrgicas, siderúrgicas, montadoras, fábricas em geral, onde a Engenharia de Produção teve a sua origem, no setor de serviços, em instituições financeiras, comerciais, de pesquisa, de ensino, de projeto e de consultoria.</p>
+	</div>
+
+    <div id="engenhariae" class="detalhes">
+		<p>Perfil profissional:
+
+            O Engenheiro Eletricista é um profissional de formação ampla, que atua na geração, transmissão, distribuição e utilização da energia elétrica. Em sua atuação, estuda, projeta e especifica materiais, componentes, dispositivos e equipamentos elétricos, eletromecânicos, magnéticos, de potência, de instrumentação, de aquisição de dados e de máquinas elétricas. Ele planeja, projeta, instala, opera e mantém instalações elétricas, sistemas de medição e de instrumentação, de acionamento de máquinas, de iluminação, de proteção contra descargas atmosféricas e de aterramento. Além disso, elabora projetos e estudos de conservação e eficiência energética, assim como de utilização de fontes alternativas e renováveis. Coordena e supervisiona equipes de trabalho, realiza estudos de viabilidade técnico-econômica, executa e fiscaliza obras e serviços técnicos; e efetua vistorias, perícias e avaliações, emitindo laudos e pareceres. Em suas atividades, considera a ética, o desenvolvimento sustentável, a segurança, a legislação e os impactos ambientais.
+            
+            Estrutura do Curso:
+            
+            
+            O curso de Engenharia Elétrica está inserido no eixo tecnológico Eletricidade Industrial e ofertado na modalidade presencial. São ofertadas 80 (oitenta) vagas anuais, sendo 40 (quarenta) vagas por semestre. Tem seu funcionamento noturno e a matrícula no regime de sistema flexível de matrícula, obedecendo a matriz de pré-requisitos estabelecida. Metade das vagas ofertadas por semestre é dedicada ao Sisu. A Carga horária total do curso encontra-se distribuída entre disciplinas de conteúdos básicos, disciplinas de conteúdo profissionalizante e disciplinas de conteúdo específico, disciplinas optativas, atividades complementares e estágio supervisionado obrigatório. O aluno deverá concluir a sua formação em, no mínimo, 10 (dez) semestres letivos e, no máximo, em 15 (quinze) semestres letivos, descontados os períodos de trancamento, que são no máximo dois, consecutivos ou não.
+            
+            </p>
+	</div>
+    <div id="engenhariac" class="detalhes">
+		<p>Perfil Profissional:
+
+            “O Engenheiro de Computação atua na área de sistemas computacionais, seus respectivos equipamentos, programas e inter-relações. Em sua atividade, otimiza, planeja, projeta, especifica, adapta, instala, mantém e opera sistemas computacionais. Integra recursos físicos e lógicos necessários para o desenvolvimento de sistemas, equipamentos e dispositivos computacionais, tais como computadores, periféricos, equipamentos de rede, de telefonia celular, sistemas embarcados e equipamentos eletrônicos microprocessados e microcontrolados. Coordena e supervisiona equipes de trabalho; realiza pesquisa científica e tecnológica e estudos de viabilidade técnico-econômica; executa e fiscaliza obras e serviços técnicos; efetua vistorias, perícias e avaliações, emitindo laudos e pareceres. Em sua atuação, considera a ética, a segurança e os impactos socioambientais.” (Fonte: Referenciais Curriculares Nacionais dos cursos de Bacharelado e Licenciatura (MEC, 2010)
+            
+            Área de Atuação:
+            
+            “O Engenheiro de Computação atua em empresas do setor de tecnologia da informação; em indústria de computadores, periféricos e sistemas embarcados; em empresas de telecomunicação, de planejamento e desenvolvimento de equipamentos e sistemas computacionais; em empresas de automação de processos industriais e computacionais; em empresas e laboratórios de pesquisa científica e tecnológica. Também pode atuar de forma autônoma, em empresa própria ou prestando consultoria. ” (Referenciais Curriculares Nacionais dos cursos de Bacharelado e Licenciatura (MEC, 2010)
+            
+            Portanto, a Engenharia de Computação aplica a ciência e a tecnologia da computação na solução de problemas de engenharia. Destina-se à formação de profissionais capazes de atuar principalmente em áreas em que existe uma forte integração entre software e hardware, como automação industrial, sistemas paralelos e distribuídos, arquitetura de computadores, sistemas embarcados, robótica, comunicação de dados e processamento digital de sinais.
+            
+             Em comparação com outros profissionais de Computação e Informática, o Engenheiro de Computação é mais direcionado a sistemas onde os computadores não são os únicos agentes que influenciam o meio. O tipo de informação principal dos demais profissionais de Computação e Informática são os dados, grandezas geradas, processadas e utilizadas por computadores. O Engenheiro de Computação raciocina também em termos de sinais, informações geradas externamente e/ou produzidas para atuar sobre o meio externo.</p>
+	</div>
+    <div id="engenhariam" class="detalhes">
+		<p>Objetivos do Curso: 
+            Formar profissionais capazes de resolver problemas de Engenharia Mecânica, não somente aplicando o conhecimento científico e tecnológico, mas também situando-os no contexto global; desenvolver pesquisas e projetos; desenvolver atividades criadoras com senso crítico, acompanhando e promovendo continuamente o progresso científico, tecnológico e humanístico na área de Engenharia Mecânica. Profissionais com formação humanística e visão holística, postura ética e atenção para as questões sociais e ambientais.
+            
+            No início do curso, o aluno obtém uma sólida base de conhecimentos, estudando matemática, física, química, informática e linguagem gráfica. Posteriormente, cursará disciplinas específicas da Engenharia Mecânica, não deixando de lado disciplinas de formação geral, que visam a ampliar a visão do futuro profissional para questões humanas, ambientais, econômicas, administrativas e legais.Duração do curso: 
+            Mínima de 10 e máxima de 15 semestres
+            
+            Mercado de Trabalho: 
+            O profissional está capacitado a atuar em qualquer empresa dos setores industrial, de serviços, de projetos e de consultoria, fábricas montadoras, podendo ainda atuar no desenvolvimento de pesquisa e na docência de nível superior. Durante o Curso, a partir do estímulo de uma cultura empreendedora, os alunos são encorajados a desenvolver seus próprios empreendimentos, ocupando seu espaço no mercado de trabalho.</p>
+	</div>
+
+
+	<h6>Licenciatura</h6>
+	<ul>
+		<li class="curso" onclick="mostrarDetalhes('pedagogia')">Licenciatura em Pedagogia - período noturno</li>
+		<li class="curso" onclick="mostrarDetalhes('letras')">Licenciatura em Letras - período noturno</li>
+		<li class="curso" onclick="mostrarDetalhes('matematica')">Licenciatura em Matematica - período vespertino</li>
+        <li class="curso" onclick="mostrarDetalhes('biologia')">Licenciatura em Biologia - período noturno</li>
+        <li class="curso" onclick="mostrarDetalhes('educacao')">Licenciatura em Educação Fisica - período vespertino</li>
+        <li class="curso" onclick="mostrarDetalhes('ciencias')">Licenciatura em Ciencias da Natureza - período vespertino</li>
+	</ul>
+
+    <div id="pedagogia" class="detalhes">
+		<p>A transmissão de conhecimento é o foco da Licenciatura em Pedagogia. O formado poderá atuar em sala de aula, mas também em áreas de gestão, supervisão e orientação da instância educacional e ainda em experiências educativas realizadas em empresas ou outros contextos não-escolares.
+
+            Áreas de atuação dos egressos: Docente; Coordenador escolar; Orientador educacional;                                                                          Consultor; Produção de Material Didático. 
+            
+            Turno: Noturno
+            
+            Número de semestres: 8</p>
+	</div>
+    <div id="letras" class="detalhes">
+		<p>O curso visa à inserção do egresso no mundo do trabalho como profissional que, por apresentar múltiplas competências e habilidades, a partir do domínio e da reflexão crítica sobre os componentes curriculares do Curso, possa atuar no Ensino, na Pesquisa e na Extensão da Educação Básica e/ou Profissional, bem como nos estudos literários e na produção textual. Licenciados aptos ao exercício da docência do 6º. ao 9º. ano de escolaridade do Ensino Fundamental e nos Cursos de Nível Médio.</p>
+	</div>
+    <div id="matematica" class="detalhes">
+		<p>A estrutura do curso se faz a partir da compreensão do currículo como um Espaço da Criação, “uma atmosfera escolar onde todos deverão estar aprendendo o tempo todo” e participando da construção do conhecimento e da forma de sua apropriação didática. Na perspectiva deste espaço da criação, no Laboratório de Ensino e Aprendizagem de Matemática (LEAMAT) o professor em formação desenvolve atividades que o encaminham a vivenciar situações de sala de aula que possibilitarão a ênfase no trabalho de investigação de materiais instrucionais, concorrendo significativamente para o desenvolvimento da inteligência lógico-matemática dos alunos. Licenciados aptos ao exercício da docência do 6º. ao 9º. ano de escolaridade do Ensino Fundamental e nos cursos de Nível Médio.</p>
+	</div>
+
+    <div id="biologia" class="detalhes">
+		<p>A estrutura do curso se faz a partir da compreensão do currículo como um Espaço da Criação, “uma atmosfera escolar onde todos deverão estar aprendendo o tempo todo” e participando da construção do conhecimento e da forma de sua apropriação didática. Na perspectiva deste espaço da criação, no Laboratório de Ensino e Aprendizagem de Matemática (LEAMAT) o professor em formação desenvolve atividades que o encaminham a vivenciar situações de sala de aula que possibilitarão a ênfase no trabalho de investigação de materiais instrucionais, concorrendo significativamente para o desenvolvimento da inteligência lógico-matemática dos alunos. Licenciados aptos ao exercício da docência do 6º. ao 9º. ano de escolaridade do Ensino Fundamental e nos cursos de Nível Médio.</p>
+	</div>
+
+    <div id="educacao" class="detalhes">
+		<p>A concepção deste curso privilegia a produção do conhecimento científico com consciência e responsabilidade, tendo como objeto de estudo e de aplicação o movimento humano em suas múltiplas expressões, através da dança, do jogo, do esporte, nas perspectivas de prevenção, da promoção, da proteção e da educação na saúde, da formação cultural, da educação motora, do lazer, da gestão de empreendimentos relacionados às atividades físicas, recreativas e esportivas. Na perspectiva deste espaço da criação, o curso conta com: Complexo Esportivo que inclui quadras polivalentes, Ginásio de Esportes e piscina semiolímpica. Este complexo abriga uma sala de coordenação do Curso de Licenciatura em Educação Física, uma sala de professores, uma sala de fisioterapia, vestiários completos masculino e feminino entre outros. Licenciados aptos ao exercício da docência do 6º. ao 9º. ano de escolaridade do Ensino Fundamental e nos cursos de Nível Médio.</p>
+	</div>
+
+    <div id="ciencias" class="detalhes">
+		<p>A estrutura do curso fundamenta-se no diálogo imprescindível à garantia da unidade dos saberes que compõem a formação de docente na área das Ciências da Natureza e suas Tecnologias. Além disso, pauta-se na compreensão do processo histórico de construção do conhecimento bem como o seu significado para sociedade, a partir do entendimento da ciência e da tecnologia enquanto atividade humana, histórica, associada a aspectos de ordem social, econômica, política e cultural. A opção por uma das graduações possíveis (Biologia, Física ou Química) é efetivada pelo cursista a partir do 4º. Período. Licenciados aptos ao exercício da docência de Ciências do 6º. ao 9º. ano de escolaridade do Ensino Fundamental e Física ou Química ou Biologia nos cursos de Nível Médio.</p>
+	</div>
+
+    <h2>Tecnologo</h2>
+	<ul>
+		<li class="curso" onclick="mostrarDetalhes('sistemas')">Tecnologo em Sistemas de telecomunicações - período noturno</li>
+	</ul>
+
+    <div id="sistemas" class="detalhes">
+		<p>O tecnólogo em Sistemas de Telecomunicações atua desde a fonte de informação até o destino, passando pelo processamento – no transmissor e receptor – à transmissão. Assim, este profissional atua planejando, implantando e operando sistemas de telecomunicações. Processamento da informação, elementos constituintes das redes de telecomunicações e eletrônica, são fundamentais para o desempenho deste profissional, cujo campo de atuação inclui indústrias, empresas do setor de telefonia fixa e móvel, telemática, televisão aberta e por assinatura, internet, radiodifusão, radiotransmissão, dentre outros.</p>
+	</div>
+
+    </body>
+    </html>
